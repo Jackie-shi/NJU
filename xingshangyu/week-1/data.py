@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 import numpy as np
-
 
 def shuffle2(x, y):
 	p = np.random.permutation(x.shape[0])
 	return x[p], y[p]
+
 
 longest = 0
 embed_size = 50
